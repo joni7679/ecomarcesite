@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+/* For Firefox
+  .sidebar {
+    scrollbar-width: none; 
+  }
+   */
+
+.filter-products::-webkit-scrollbar {
+  display: none;
+}
+
+.bottom-part::-webkit-scrollbar {
+  display: none;
+}
+
+.products::-webkit-scrollbar {
+  display: none;
+}

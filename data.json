@@ -1,0 +1,1162 @@
+{
+    "products": [
+        {
+            "id": 1,
+            "title": "Ai Phone Ultra",
+            "description": "Ai Phone Ultra is a popular mascara known for its volumizing and lengthening effects. Achieve dramatic lashes with this long-lasting and cruelty-free formula.",
+            "category": "electronics",
+            "price": 9.99,
+            "discountPercentage": 7.17,
+            "rating": 4.94,
+            "stock": 5,
+            "tags": "mascara",
+            "brand": "Wtch",
+            "weight": 2,
+            "dimensions": {
+                "width": 23.17,
+                "height": 14.43,
+                "depth": 28.01
+            },
+            "warrantyInformation": "1 month warranty",
+            "shippingInformation": "Ships in 1 month",
+            "availabilityStatus": "Low Stock",
+            "reviews": [
+                {
+                    "rating": 2,
+                    "comment": "Very unhappy with my purchase!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "John Doe",
+                    "reviewerEmail": "john.doe@x.dummyjson.com"
+                },
+                {
+                    "rating": 2,
+                    "comment": "Not as described!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Nolan Gonzalez",
+                    "reviewerEmail": "nolan.gonzalez@x.dummyjson.com"
+                },
+                {
+                    "rating": 5,
+                    "comment": "Very satisfied!",
+                    "date": "2024-05-23T08:56:21.618Z",
+                    "reviewerName": "Scarlett Wright",
+                    "reviewerEmail": "scarlett.wright@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 24,
+            "meta": {
+                "createdAt": "2024-05-23T08:56:21.618Z",
+                "updatedAt": "2024-05-23T08:56:21.618Z",
+                "barcode": "9164035109868",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/iphone4.jpg",
+            "images": [
+                "...",
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 2,
+            "title": "Casio Men's Watch",
+            "description": "Casio Men's Watch combines style and functionality. It features a durable build and a sleek design for everyday wear.",
+            "category": "watch",
+            "price": 49.99,
+            "discountPercentage": 10.5,
+            "rating": 4.8,
+            "stock": 20,
+            "tags": [
+                "watch",
+                "men"
+            ],
+            "brand": "Casio",
+            "sku": "WCH2342B",
+            "weight": 1.5,
+            "dimensions": {
+                "width": 12.0,
+                "height": 8.0,
+                "depth": 6.0
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Great watch, excellent value!",
+                    "date": "2024-05-24T09:12:34.618Z",
+                    "reviewerName": "Alice Brown",
+                    "reviewerEmail": "alice.brown@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "45 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-22T07:45:11.618Z",
+                "updatedAt": "2024-05-24T09:12:34.618Z",
+                "barcode": "9102345123987",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/apple-watch-se-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 3,
+            "title": "Nike Air Max Sneakers",
+            "description": "Nike Air Max Sneakers offer superior comfort and style, perfect for running or casual outings.",
+            "category": "footwear",
+            "price": 129.99,
+            "discountPercentage": 15.0,
+            "rating": 4.6,
+            "stock": 10,
+            "tags": [
+                "shoes",
+                "sneakers",
+                "men"
+            ],
+            "brand": "Nike",
+            "sku": "FTWR1234M",
+            "weight": 3,
+            "dimensions": {
+                "width": 30.0,
+                "height": 15.0,
+                "depth": 10.0
+            },
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Comfortable but slightly overpriced.",
+                    "date": "2024-05-21T11:10:21.618Z",
+                    "reviewerName": "Chris Johnson",
+                    "reviewerEmail": "chris.johnson@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-20T06:34:11.618Z",
+                "updatedAt": "2024-05-21T11:10:21.618Z",
+                "barcode": "9134035129867",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/NikeAirMaxSneakers.avif",
+            "images": [
+                "...",
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 4,
+            "title": "Apple iPhone 14",
+            "description": "Apple iPhone 14 with A15 Bionic chip, an advanced dual-camera system, and superfast 5G.",
+            "category": "electronics",
+            "price": 999.99,
+            "discountPercentage": 5.0,
+            "rating": 4.9,
+            "stock": 50,
+            "tags": [
+                "smartphone",
+                "iOS"
+            ],
+            "brand": "Apple",
+            "sku": "APL2023",
+            "weight": 0.5,
+            "dimensions": {
+                "width": 7.5,
+                "height": 15.0,
+                "depth": 0.8
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 2-3 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Amazing performance!",
+                    "date": "2024-06-01T10:12:11.618Z",
+                    "reviewerName": "Jane Smith",
+                    "reviewerEmail": "jane.smith@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "14 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-18T06:34:11.618Z",
+                "updatedAt": "2024-06-01T10:12:11.618Z",
+                "barcode": "9134123129867",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/iphone2.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Dell XPS 15 Laptop",
+            "description": "Dell XPS 15 with Intel Core i7, 16GB RAM, 512GB SSD, and a 15.6-inch FHD+ display.",
+            "category": "laptops",
+            "price": 1499.99,
+            "discountPercentage": 8.0,
+            "rating": 4.7,
+            "stock": 15,
+            "tags": [
+                "laptop",
+                "electronics"
+            ],
+            "brand": "Dell",
+            "sku": "DLPX15",
+            "weight": 2.5,
+            "dimensions": {
+                "width": 35.0,
+                "height": 24.0,
+                "depth": 2.0
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 4-6 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4.5,
+                    "comment": "Great for productivity and entertainment.",
+                    "date": "2024-05-25T08:15:21.618Z",
+                    "reviewerName": "Alex Williams",
+                    "reviewerEmail": "alex.williams@x.dummyjson.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-14T09:34:11.618Z",
+                "updatedAt": "2024-05-25T08:15:21.618Z",
+                "barcode": "9134045129867",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/Dell XPS-15-Laptop.avif",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 5,
+            "title": "Rolex Submariner Watch",
+            "description": "The Rolex Submariner is an iconic watch known for its timeless design and exceptional performance under water.",
+            "category": "watch",
+            "price": 8499.99,
+            "discountPercentage": 5.0,
+            "rating": 4.9,
+            "stock": 3,
+            "tags": [
+                "luxury",
+                "watch",
+                "Rolex"
+            ],
+            "brand": "Rolex",
+            "sku": "RLX12345",
+            "weight": 1.2,
+            "dimensions": {
+                "width": 4.0,
+                "height": 4.5,
+                "depth": 1.5
+            },
+            "warrantyInformation": "5 years warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "Low Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "A masterpiece in timekeeping.",
+                    "date": "2024-05-21T10:30:00.000Z",
+                    "reviewerName": "Emily Carter",
+                    "reviewerEmail": "emily.carter@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-05-20T06:34:11.618Z",
+                "updatedAt": "2024-05-21T10:30:00.000Z",
+                "barcode": "1234567890123",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 7,
+            "title": "Omega Seamaster Watch",
+            "description": "The Omega Seamaster combines precision with an elegant design, ideal for professionals and adventurers.",
+            "category": "watch",
+            "price": 4999.99,
+            "discountPercentage": 7.5,
+            "rating": 4.8,
+            "stock": 5,
+            "tags": [
+                "luxury",
+                "watch",
+                "Omega"
+            ],
+            "brand": "Omega",
+            "sku": "OMG45678",
+            "weight": 1.4,
+            "dimensions": {
+                "width": 4.2,
+                "height": 4.6,
+                "depth": 1.4
+            },
+            "warrantyInformation": "3 years warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Amazing build and looks classy.",
+                    "date": "2024-06-10T15:45:00.000Z",
+                    "reviewerName": "John Smith",
+                    "reviewerEmail": "john.smith@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-06-01T12:30:00.000Z",
+                "updatedAt": "2024-06-10T15:45:00.000Z",
+                "barcode": "9876543210987",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/omegawatch.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 8,
+            "title": "Tag Heuer Carrera Watch",
+            "description": "Tag Heuer Carrera is a perfect blend of sporty and elegant, ideal for modern men.",
+            "category": "watch",
+            "price": 3799.99,
+            "discountPercentage": 6.0,
+            "rating": 4.7,
+            "stock": 8,
+            "tags": [
+                "luxury",
+                "watch",
+                "Tag Heuer"
+            ],
+            "brand": "Tag Heuer",
+            "sku": "TAG98765",
+            "weight": 1.3,
+            "dimensions": {
+                "width": 4.1,
+                "height": 4.5,
+                "depth": 1.3
+            },
+            "warrantyInformation": "2 years warranty",
+            "shippingInformation": "Ships in 7-10 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Great watch but pricey.",
+                    "date": "2024-07-05T12:15:00.000Z",
+                    "reviewerName": "Linda Johnson",
+                    "reviewerEmail": "linda.johnson@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-07-01T10:00:00.000Z",
+                "updatedAt": "2024-07-05T12:15:00.000Z",
+                "barcode": "1122334455667",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/smart-watch.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 9,
+            "title": "Apple iPhone 14 Pro",
+            "description": "The latest iPhone 14 Pro with a stunning design, powerful A16 Bionic chip, and advanced camera system.",
+            "category": "electronics",
+            "price": 1199.99,
+            "discountPercentage": 5.0,
+            "rating": 4.9,
+            "stock": 15,
+            "tags": [
+                "smartphone",
+                "Apple",
+                "iPhone"
+            ],
+            "brand": "Apple",
+            "sku": "IP14PRO123",
+            "weight": 0.5,
+            "dimensions": {
+                "width": 7.1,
+                "height": 14.7,
+                "depth": 0.8
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 2-4 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Amazing phone, totally worth it!",
+                    "date": "2024-06-01T10:30:00.000Z",
+                    "reviewerName": "Alice Brown",
+                    "reviewerEmail": "alice.brown@example.com"
+                }
+            ],
+            "returnPolicy": "14 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-06-01T09:00:00.000Z",
+                "updatedAt": "2024-06-01T10:30:00.000Z",
+                "barcode": "1234567890123",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 10,
+            "title": "Samsung Galaxy S23 Ultra",
+            "description": "Samsung Galaxy S23 Ultra with a sleek design, advanced Snapdragon processor, and high-resolution camera.",
+            "category": "electronics",
+            "price": 1099.99,
+            "discountPercentage": 8.0,
+            "rating": 4.8,
+            "stock": 20,
+            "tags": [
+                "smartphone",
+                "Samsung",
+                "Galaxy"
+            ],
+            "brand": "Samsung",
+            "sku": "S23ULT123",
+            "weight": 0.6,
+            "dimensions": {
+                "width": 7.6,
+                "height": 16.2,
+                "depth": 0.9
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Fantastic phone, great value!",
+                    "date": "2024-06-02T11:00:00.000Z",
+                    "reviewerName": "John Doe",
+                    "reviewerEmail": "john.doe@example.com"
+                }
+            ],
+            "returnPolicy": "14 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-06-01T08:00:00.000Z",
+                "updatedAt": "2024-06-02T11:00:00.000Z",
+                "barcode": "9876543210987",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/samsunggalaxy5.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 11,
+            "title": "Google Pixel 7 Pro",
+            "description": "Google Pixel 7 Pro offers an exceptional camera experience and seamless integration with Android 13.",
+            "category": "electronics",
+            "price": 899.99,
+            "discountPercentage": 7.0,
+            "rating": 4.7,
+            "stock": 18,
+            "tags": [
+                "smartphone",
+                "Google",
+                "Pixel"
+            ],
+            "brand": "Google",
+            "sku": "PIX7PRO123",
+            "weight": 0.55,
+            "dimensions": {
+                "width": 7.4,
+                "height": 15.5,
+                "depth": 0.85
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 3-6 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Great phone, but the battery could be better.",
+                    "date": "2024-06-03T12:15:00.000Z",
+                    "reviewerName": "Emily Watson",
+                    "reviewerEmail": "emily.watson@example.com"
+                }
+            ],
+            "returnPolicy": "14 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-06-01T07:30:00.000Z",
+                "updatedAt": "2024-06-03T12:15:00.000Z",
+                "barcode": "1122334455667",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/GooglePixel7Pro.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 12,
+            "title": "Levi's Denim Jacket",
+            "description": "Classic Levi's Denim Jacket with a timeless style, perfect for casual and semi-formal outfits.",
+            "category": "jackets",
+            "price": 89.99,
+            "discountPercentage": 10.0,
+            "rating": 4.5,
+            "stock": 25,
+            "tags": [
+                "denim",
+                "jacket",
+                "Levi's"
+            ],
+            "brand": "Levi's",
+            "sku": "LJD001",
+            "weight": 1.2,
+            "dimensions": {
+                "width": 30.0,
+                "height": 40.0,
+                "depth": 5.0
+            },
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Perfect fit and great quality!",
+                    "date": "2024-07-01T10:00:00.000Z",
+                    "reviewerName": "Emma Watson",
+                    "reviewerEmail": "emma.watson@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-07-01T08:00:00.000Z",
+                "updatedAt": "2024-07-01T10:00:00.000Z",
+                "barcode": "1234598765432",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/GooglePixel7Pro.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 13,
+            "title": "North Face Puffer Jacket",
+            "description": "Stay warm with the North Face Puffer Jacket, designed for extreme cold weather and outdoor activities.",
+            "category": "jackets",
+            "price": 199.99,
+            "discountPercentage": 15.0,
+            "rating": 4.8,
+            "stock": 15,
+            "tags": [
+                "puffer",
+                "jacket",
+                "North Face"
+            ],
+            "brand": "North Face",
+            "sku": "NFPJ002",
+            "weight": 2.5,
+            "dimensions": {
+                "width": 35.0,
+                "height": 50.0,
+                "depth": 8.0
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Perfect for cold weather!",
+                    "date": "2024-07-05T11:00:00.000Z",
+                    "reviewerName": "John Smith",
+                    "reviewerEmail": "john.smith@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-07-03T09:00:00.000Z",
+                "updatedAt": "2024-07-05T11:00:00.000Z",
+                "barcode": "1234598765443",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/Jacket2.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 14,
+            "title": "North Face Puffer Jacket",
+            "description": "Stay warm with the North Face Puffer Jacket, designed for extreme cold weather and outdoor activities.",
+            "category": "jackets",
+            "price": 199.99,
+            "discountPercentage": 15.0,
+            "rating": 4.8,
+            "stock": 15,
+            "tags": [
+                "puffer",
+                "jacket",
+                "North Face"
+            ],
+            "brand": "North Face",
+            "sku": "NFPJ002",
+            "weight": 2.5,
+            "dimensions": {
+                "width": 35.0,
+                "height": 50.0,
+                "depth": 8.0
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 5,
+                    "comment": "Perfect for cold weather!",
+                    "date": "2024-07-05T11:00:00.000Z",
+                    "reviewerName": "John Smith",
+                    "reviewerEmail": "john.smith@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-07-03T09:00:00.000Z",
+                "updatedAt": "2024-07-05T11:00:00.000Z",
+                "barcode": "1234598765443",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/jakets-3.jpeg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 15,
+            "title": "Adidas Windbreaker Jacket",
+            "description": "Lightweight Adidas Windbreaker Jacket, ideal for windy and rainy days while maintaining a stylish look.",
+            "category": "jackets",
+            "price": 79.99,
+            "discountPercentage": 12.5,
+            "rating": 4.6,
+            "stock": 30,
+            "tags": [
+                "windbreaker",
+                "jacket",
+                "Adidas"
+            ],
+            "brand": "Adidas",
+            "sku": "ADWB003",
+            "weight": 0.8,
+            "dimensions": {
+                "width": 32.0,
+                "height": 42.0,
+                "depth": 4.0
+            },
+            "warrantyInformation": "1 year warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "availabilityStatus": "In Stock",
+            "reviews": [
+                {
+                    "rating": 4,
+                    "comment": "Stylish and functional.",
+                    "date": "2024-07-10T10:30:00.000Z",
+                    "reviewerName": "Sophia Brown",
+                    "reviewerEmail": "sophia.brown@example.com"
+                }
+            ],
+            "returnPolicy": "30 days return policy",
+            "minimumOrderQuantity": 1,
+            "meta": {
+                "createdAt": "2024-07-05T12:00:00.000Z",
+                "updatedAt": "2024-07-10T10:30:00.000Z",
+                "barcode": "1234598765454",
+                "qrCode": "..."
+            },
+            "thumbnail": "./public/imges/jakets.jpeg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 16,
+            "title": "Women's Floral Summer Dress",
+            "description": "A light and breezy floral dress, perfect for summer outings and beach vacations.",
+            "category": "women",
+            "price": 49.99,
+            "discountPercentage": 10,
+            "rating": 4.7,
+            "stock": 20,
+            "tags": [
+                "summer",
+                "dress",
+                "floral"
+            ],
+            "brand": "Zara",
+            "sku": "WFSD001",
+            "sizeOptions": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colorOptions": [
+                "Pink",
+                "Blue",
+                "White"
+            ],
+            "material": "Cotton",
+            "careInstructions": "Machine wash cold",
+            "warrantyInformation": "30 days warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "returnPolicy": "15 days return policy",
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 17,
+            "title": "Men's Slim Fit Jeans",
+            "description": "Trendy slim-fit jeans for a modern and casual look.",
+            "category": "men",
+            "price": 59.99,
+            "discountPercentage": 12,
+            "rating": 4.5,
+            "stock": 25,
+            "tags": [
+                "jeans",
+                "slim fit",
+                "men"
+            ],
+            "brand": "Levi's",
+            "sku": "MSFJ002",
+            "sizeOptions": [
+                "28",
+                "30",
+                "32",
+                "34",
+                "36"
+            ],
+            "colorOptions": [
+                "Dark Blue",
+                "Black",
+                "Grey"
+            ],
+            "material": "Denim",
+            "careInstructions": "Machine wash warm",
+            "warrantyInformation": "6 months warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "returnPolicy": "30 days return policy",
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 18,
+            "title": "Women's Elegant Blouse",
+            "description": "A stylish blouse suitable for both office wear and casual outings.",
+            "category": "women",
+            "price": 39.99,
+            "discountPercentage": 8,
+            "rating": 4.6,
+            "stock": 15,
+            "tags": [
+                "blouse",
+                "elegant",
+                "women"
+            ],
+            "brand": "H&M",
+            "sku": "WEB003",
+            "sizeOptions": [
+                "S",
+                "M",
+                "L",
+                "XL"
+            ],
+            "colorOptions": [
+                "White",
+                "Beige",
+                "Navy Blue"
+            ],
+            "material": "Polyester",
+            "careInstructions": "Hand wash only",
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "returnPolicy": "15 days return policy",
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Men's Formal Shirt",
+            "description": "A crisp, tailored shirt ideal for professional settings and formal events.",
+            "category": "men",
+            "price": 45.99,
+            "discountPercentage": 15,
+            "rating": 4.4,
+            "stock": 30,
+            "tags": [
+                "formal",
+                "shirt",
+                "men"
+            ],
+            "brand": "Raymond",
+            "sku": "MFS004",
+            "sizeOptions": [
+                "M",
+                "L",
+                "XL",
+                "XXL"
+            ],
+            "colorOptions": [
+                "White",
+                "Light Blue",
+                "Grey"
+            ],
+            "material": "Cotton",
+            "careInstructions": "Machine wash cold",
+            "warrantyInformation": "No warranty",
+            "shippingInformation": "Ships in 3-5 business days",
+            "returnPolicy": "30 days return policy",
+            "thumbnail": "./public/imges/tsherit.jpeg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 19,
+            "title": "Women's High-Waist Trousers",
+            "description": "Comfortable and stylish high-waist trousers, great for work and casual wear.",
+            "category": "women",
+            "price": 54.99,
+            "discountPercentage": 10,
+            "rating": 4.8,
+            "stock": 18,
+            "tags": [
+                "trousers",
+                "high-waist",
+                "women"
+            ],
+            "brand": "Mango",
+            "sku": "WHWT005",
+            "sizeOptions": [
+                "XS",
+                "S",
+                "M",
+                "L"
+            ],
+            "colorOptions": [
+                "Black",
+                "Khaki",
+                "Navy"
+            ],
+            "material": "Cotton blend",
+            "careInstructions": "Machine wash warm",
+            "warrantyInformation": "30 days warranty",
+            "shippingInformation": "Ships in 5-7 business days",
+            "returnPolicy": "15 days return policy",
+            "thumbnail": "./public/imges/woman-2.jpeg",
+            "images": [
+                "...",
+                "..."
+            ]
+        },
+        {
+            "id": 20,
+            "title": "Moisturizing Face Cream",
+            "description": "Hydrating and nourishing cream for all skin types.",
+            "price": 20,
+            "category": "Cosmetics",
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "src/assets/images/face-cream1.jpg",
+                "src/assets/images/face-cream2.jpg"
+            ],
+            "meta": {
+                "brand": "GlowCare",
+                "createdAt": "2024-12-01T08:00:00Z",
+                "updatedAt": "2024-12-25T10:30:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 21,
+            "title": "Matte Liquid Lipstick",
+            "description": "Long-lasting matte finish in vibrant shades.",
+            "price": 15,
+            "category": "Cosmetics",
+            "thumbnail": "./public/imges/apple-watch-series-7-1.jpg",
+            "images": [
+                "./public/imges/apple-watch-series-7-1.jpg"
+            ],
+            "meta": {
+                "brand": "Luxe Lips",
+                "createdAt": "2024-11-15T10:00:00Z",
+                "updatedAt": "2024-12-20T12:00:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 22,
+            "title": "Refreshing Face Wash",
+            "description": "Gentle foaming face wash for clear skin.",
+            "price": 12,
+            "category": "Cosmetics",
+            "thumbnail": "./public/imges/FaceWash.jpg",
+            "images": [
+                "./public/imges/apple-watch-series-7-1.jpg"
+            ],
+            "meta": {
+                "brand": "Pure Skin",
+                "createdAt": "2024-10-10T09:00:00Z",
+                "updatedAt": "2024-12-10T11:00:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 23,
+            "title": "Stylish Phone Back Cover",
+            "description": "Durable and lightweight back cover with elegant design.",
+            "price": 10,
+            "category": "Accessories",
+            "thumbnail": "./public/imges/cover-1.jpg",
+            "images": [
+                "src/assets/images/phone-back-cover1.jpg",
+                "src/assets/images/phone-back-cover2.jpg"
+            ],
+            "meta": {
+                "brand": "CoverCraft",
+                "createdAt": "2024-12-20T10:00:00Z",
+                "updatedAt": "2024-12-27T12:00:00Z"
+            },
+            "returnPolicy": "10 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 24,
+            "title": "Dell Inspiron Laptop",
+            "description": "15.6-inch Full HD display, 8GB RAM, 512GB SSD, Intel Core i5.",
+            "price": 750,
+            "category": "Electronics",
+            "thumbnail": "./public/imges/DellInspironLaptop2.jpeg",
+            "images": [],
+            "meta": {
+                "brand": "Dell",
+                "createdAt": "2024-11-15T10:00:00Z",
+                "updatedAt": "2024-12-10T14:00:00Z"
+            },
+            "returnPolicy": "15 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 25,
+            "title": "HP Pavilion Laptop",
+            "description": "14-inch HD touchscreen, 16GB RAM, 1TB SSD, AMD Ryzen 7.",
+            "price": 800,
+            "category": "Electronics",
+            "thumbnail": "./public/imges/DellInspironLaptop.jpg",
+            "images": [
+                "./public/imges/apple-watch-series-7-1.jpg"
+            ],
+            "meta": {
+                "brand": "HP",
+                "createdAt": "2024-10-05T09:30:00Z",
+                "updatedAt": "2024-12-01T11:15:00Z"
+            },
+            "returnPolicy": "15 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 26,
+            "title": "Ladies Smart Watch",
+            "description": "Elegant smartwatch with health tracking and customizable bands.",
+            "price": 120,
+            "category": "Wearables",
+            "thumbnail": "./public/imges/ladies-watch.jpeg",
+            "images": [
+                "src/assets/images/ladies-smart-watch1.jpg"
+            ],
+            "meta": {
+                "brand": "FemmeTech",
+                "createdAt": "2024-12-01T08:00:00Z",
+                "updatedAt": "2024-12-26T09:45:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 27,
+            "title": "Fitness Smart Watch",
+            "description": "Track your fitness goals with this lightweight ladies' smartwatch.",
+            "price": 100,
+            "category": "Wearables",
+            "thumbnail": "./public/imges/FitnessSmartWatch.jpeg",
+            "images": [
+                "./public/imges/apple-watch-series-7-1.jpg"
+            ],
+            "meta": {
+                "brand": "ActiveFit",
+                "createdAt": "2024-11-20T10:15:00Z",
+                "updatedAt": "2024-12-25T12:30:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 28,
+            "title": "Classic White T-Shirt",
+            "description": "Premium cotton t-shirt with a comfortable fit and minimalistic design.",
+            "price": 20,
+            "category": "Clothing",
+            "thumbnail": "src/assets/images/white-tshirt.jpg",
+            "images": [
+                "src/assets/images/white-tshirt1.jpg",
+                "src/assets/images/white-tshirt2.jpg"
+            ],
+            "meta": {
+                "brand": "ComfortWear",
+                "createdAt": "2024-12-15T10:00:00Z",
+                "updatedAt": "2024-12-25T15:00:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 29,
+            "title": "Graphic Printed T-Shirt",
+            "description": "Trendy t-shirt with unique graphic prints, made from soft fabric.",
+            "price": 25,
+            "category": "Clothing",
+            "thumbnail": "src/assets/images/graphic-tshirt.jpg",
+            "images": [
+                "src/assets/images/graphic-tshirt1.jpg",
+                "src/assets/images/graphic-tshirt2.jpg"
+            ],
+            "meta": {
+                "brand": "UrbanStyle",
+                "createdAt": "2024-11-20T09:00:00Z",
+                "updatedAt": "2024-12-20T12:00:00Z"
+            },
+            "returnPolicy": "10 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 30,
+            "title": "Black Polo T-Shirt",
+            "description": "Elegant black polo t-shirt with a collar, perfect for casual outings.",
+            "price": 30,
+            "category": "Clothing",
+            "thumbnail": "src/assets/images/black-polo.jpg",
+            "images": [
+                "src/assets/images/black-polo1.jpg",
+                "src/assets/images/black-polo2.jpg"
+            ],
+            "meta": {
+                "brand": "PoloTrend",
+                "createdAt": "2024-10-10T08:00:00Z",
+                "updatedAt": "2024-12-01T16:00:00Z"
+            },
+            "returnPolicy": "15 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 31,
+            "title": "Red Sports T-Shirt",
+            "description": "Breathable and quick-dry sports t-shirt, ideal for workouts.",
+            "price": 28,
+            "category": "Clothing",
+            "thumbnail": "src/assets/images/red-sports-tshirt.jpg",
+            "images": [
+                "src/assets/images/red-sports-tshirt1.jpg",
+                "src/assets/images/red-sports-tshirt2.jpg"
+            ],
+            "meta": {
+                "brand": "ActiveWear",
+                "createdAt": "2024-12-01T14:00:00Z",
+                "updatedAt": "2024-12-26T18:00:00Z"
+            },
+            "returnPolicy": "7 days return policy",
+            "minimumOrderQuantity": 1
+        },
+        {
+            "id": 32,
+            "title": "Striped Navy T-Shirt",
+            "description": "Stylish striped navy t-shirt for a modern and casual look.",
+            "price": 22,
+            "category": "Clothing",
+            "thumbnail": "src/assets/images/striped-navy-tshirt.jpg",
+            "images": [
+                "src/assets/images/striped-navy-tshirt1.jpg",
+                "src/assets/images/striped-navy-tshirt2.jpg"
+            ],
+            "meta": {
+                "brand": "StreetWear",
+                "createdAt": "2024-12-10T10:30:00Z",
+                "updatedAt": "2024-12-27T11:00:00Z"
+            },
+            "returnPolicy": "10 days return policy",
+            "minimumOrderQuantity": 1
+        }
+    ]
+}
