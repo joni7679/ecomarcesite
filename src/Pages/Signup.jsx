@@ -6,7 +6,13 @@ import { FaFacebook } from "react-icons/fa";
 import { useFormik } from 'formik';
 import { Signupschema } from '../schemas';
 import Footer from '../components/Footer';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import { number } from 'yup';
+import { nanoid } from '@reduxjs/toolkit';
+import { useDispatch } from 'react-redux';
+import { addAuth } from '../redux/slices/authSlice';
+import { toast, ToastContainer } from 'react-toastify';
 
 const initialValues = {
   name: '',
@@ -16,20 +22,43 @@ const initialValues = {
 };
 
 export default function Signup() {
-  
+  const dispatch = useDispatch();
+  let navigate = useNavigate();
+
   const { values, errors, touched, handleBlur, handleSubmit, handleChange, handleReset } = useFormik({
+
     initialValues: initialValues,
     validationSchema: Signupschema,
+
     onSubmit: (values) => {
+
+      const authData = {
+        id: nanoid(),
+        name: values.name,
+        email: values.email,
+        number: values.number,
+        password: values.password,
+      };
+
+      axios.post(`http://localhost:3000/authes`, authData).then((res) => {
+        console.log(res.data);
+        dispatch(addAuth());
+        toast.success("Sign up Successfully")
+        setTimeout(() => {
+          navigate(`/login`);
+        }, 1000)
+      })
       console.log(values);
       handleReset();
     },
   });
 
-  console.log(errors);
+
+
 
   return (
     <>
+      <ToastContainer />
       <Header />
       <div className='relative w-full h-screen'>
         <div className="max-w-sm shadow-lg p-8 absolute top-[50%] left-[50%] -transform -translate-x-1/2 -translate-y-1/2">

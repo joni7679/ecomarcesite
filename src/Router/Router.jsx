@@ -6,6 +6,9 @@ import ProductDetails from "../Pages/ProductDetails.jsx";
 import Signup from "../Pages/Signup.jsx";
 import Login from "../Pages/Login.jsx";
 import Error404 from "../Pages/Error404.jsx";
+import UsersList from "../Pages/UsersList.jsx";
+import UserDasboard from "../Dasboard/UserDasboard/UserDasboard.jsx";
+import UserProfile from "../Dasboard/UserDasboard/UserProfile.jsx";
 // import ProductBuyPage from "../Pages/ProductBuyPage.jsx";
 
 export let router = createBrowserRouter([
@@ -28,7 +31,7 @@ export let router = createBrowserRouter([
         // ]
     },
     {
-        path: "/buypage/:id",
+        path: "/productDetailsage/:id",
         element: <ProductDetails />
     },
     {
@@ -38,6 +41,19 @@ export let router = createBrowserRouter([
     {
         path: "/login",
         element: <Login />
+    },
+    {
+        path: "/userlist",
+        element: <UsersList />
+    },
+
+    {
+        path: "/dasboard",
+        element: <UserDasboard />,
+    },
+    {
+        path: "profile",
+        element: <UserProfile />
     },
 
     {
