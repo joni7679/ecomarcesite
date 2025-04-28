@@ -10,6 +10,7 @@ import { productsApi } from '../redux/slices/productSlice';
 export default function ProductFilter() {
     const dispatch = useDispatch();
     const { products, isLoading, error } = useSelector((state) => state.products);
+    
 
     useEffect(() => {
         dispatch(productsApi());

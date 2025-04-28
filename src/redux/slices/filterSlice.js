@@ -23,7 +23,9 @@ const initialState = {
 export const filterSlice = createSlice({
     name: "filter",
     initialState,
-    reducers: {},
+    reducers: {
+        
+    },
     extraReducers: (builder) => {
         builder
             .addCase(categoryApi.pending, (state) => {

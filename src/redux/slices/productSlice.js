@@ -5,7 +5,9 @@ import axios from 'axios';
 export let productsApi = createAsyncThunk('fetch/data', async () => {
     try {
         const response = await axios.get('https://dummyjson.com/products');
+        console.log(response.data.products)
         return response.data.products; // Returning the data directly
+
     } catch (error) {
         throw Error('Error fetching products:', error.message); // Throw an error to be handled in the reducer
     }
@@ -14,7 +16,7 @@ export let productsApi = createAsyncThunk('fetch/data', async () => {
 // Step 2: Initial state
 let initialState = {
     products: [],
-    isLoading: false, 
+    isLoading: false,
     error: null,
 };
 
@@ -22,7 +24,12 @@ let initialState = {
 export let productsSlice = createSlice({
     name: 'products',
     initialState,
-    reducers: {},
+    reducers: {
+        SearchQuery: (state, action) => {
+            state.products = state.push(action.payload);
+
+        },
+    },
     extraReducers: (builder) => {
         builder
             .addCase(productsApi.pending, (state) => {
@@ -34,10 +41,11 @@ export let productsSlice = createSlice({
             })
             .addCase(productsApi.rejected, (state, action) => {
                 state.error = action.error.message;
-                state.isLoading = false; 
+                state.isLoading = false;
             });
     },
 });
 
 // Step 4: Export the reducer
+export const { SearchQuery } = productsSlice.actions; // Exporting the action
 export default productsSlice.reducer;

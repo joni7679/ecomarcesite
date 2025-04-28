@@ -33,7 +33,6 @@ export const loginAuthData = createAsyncThunk(
 
             console.log("User found:", matchedUser);
             window.localStorage.setItem("user", JSON.stringify(matchedUser));
-
             return matchedUser;
         } catch (error) {
             return rejectWithValue(error.message);
@@ -85,12 +84,12 @@ export const authSlice = createSlice({
             .addCase(loginAuthData.fulfilled, (state, action) => {
                 state.isLoading = false;
                 state.auths = action.payload;
-                
                 state.isLoggin=true;
             })
             .addCase(loginAuthData.rejected, (state, action) => {
                 state.isLoading = false;
                 state.error = action.payload;
+                state.isLoggin=false;
             });
     }
 });

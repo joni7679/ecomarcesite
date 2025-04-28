@@ -21,17 +21,16 @@ function UserDasboard() {
     
     // handle log out
     const handleLogOut =()=>{
-        let logOut=window.confirm("Are You Comfrim went To Delet This Data");
+        let logOut=window.confirm("Are You Comfrim went To Log out");
         if(logOut){
             localStorage.removeItem("user");
-            toast.success("u Are Log Out Successfully");
+            toast.success("Log Out Successfully");
             setTimeout(()=>{
                 navigate(`/login`)
             },1000)
-            
-        }
-        
+        }    
     }
+    
     return (
         <>
         <ToastContainer/>

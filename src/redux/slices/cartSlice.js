@@ -16,7 +16,9 @@ export let cartSlice = createSlice({
     name: 'cartItems',
     initialState,
     reducers: {
-
+        addTocart: (state, action) => {
+            state.cartItems.push(action.payload);
+        },
         removeCart: (state, action) => {
             state.cartItems = state.cartItems.filter(item => item.id !== action.payload);
         }

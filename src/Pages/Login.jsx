@@ -1,9 +1,9 @@
 import { useFormik } from 'formik';
-import React from 'react'
+import React, { useEffect } from 'react'
 import { loginupschema } from '../schemas';
 import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { loginAuthData } from '../redux/slices/authSlice';
+import { authApiData, loginAuthData } from '../redux/slices/authSlice';
 import { number } from 'yup';
 import { toast, ToastContainer } from 'react-toastify';
 import Header from '../components/Header';
@@ -16,7 +16,13 @@ const initialValues = {
 function Login() {
     let dispatch = useDispatch();
     let navigate = useNavigate();
-    let { auths, isLoading, error } = useSelector((state) => state.auths)
+    let { auths, isLoading, error } = useSelector((state) => state.auths);
+    console.log(auths);
+    
+    useEffect(() => {
+        dispatch(authApiData);
+        
+    }, [])
     const { values, errors, touched, handleBlur, handleSubmit, handleChange, handleReset } = useFormik({
         initialValues: initialValues,
         validationSchema: loginupschema,

@@ -7,11 +7,6 @@
   display: none;
 }
 
-/* For Firefox
-  .sidebar {
-    scrollbar-width: none; 
-  }
-   */
 
 .filter-products::-webkit-scrollbar {
   display: none;

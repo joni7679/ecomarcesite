@@ -23,6 +23,14 @@ export default function Sidebar() {
     }
     console.log(colors());
 
+    // category 
+    let categorys=(id)=>{
+        alert(id)
+        console.log("selted.categories[id].name",category.categories[id].name);
+        dispatch(categoryApi(id))
+
+    }
+
     return (
         <>
 
@@ -32,7 +40,7 @@ export default function Sidebar() {
                     <ul class="p-4">
                         {category.categories.length > 0 ? (
                             category.categories.map((categorie, i) => (
-                                <li key={i} className="text-gray-600 cursor-pointer hover:text-gray-900">
+                                <li onClick={()=>categorys(i)}  key={i} className="text-gray-600 cursor-pointer hover:text-gray-900">
                                     {categorie.name}
                                 </li>
                             ))

@@ -43,6 +43,7 @@ export default function Signup() {
       axios.post(`http://localhost:3000/authes`, authData).then((res) => {
         console.log(res.data);
         dispatch(addAuth());
+       
         toast.success("Sign up Successfully")
         setTimeout(() => {
           navigate(`/login`);

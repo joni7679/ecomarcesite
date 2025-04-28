@@ -5,8 +5,9 @@ import { FaShoppingCart } from "react-icons/fa";
 import { FiMapPin } from "react-icons/fi";
 import { Link, useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from "react-redux";
-import { authApiData } from '../redux/slices/authSlice';
+import { authApiData, loginAuthData } from '../redux/slices/authSlice';
 import userlogo from '../../public/imges/user.png'
+import { productsApi } from '../redux/slices/productSlice';
 
 // The `Categories` prop is expected to be an array
 export default function Header() {
@@ -14,6 +15,7 @@ export default function Header() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
   const { auths, isLoggin } = useSelector((state) => state.auths);
+  const { products, isLoading, error, SearchQuery } = useSelector((state) => state.products);
 
   console.log(isLoggin);
 
@@ -28,21 +30,45 @@ export default function Header() {
     console.log("User component mounted or isLoggin changed");
 
     let storedUser = localStorage.getItem("user");
-
     if (storedUser) {
       let parsedUser = JSON.parse(storedUser);
       console.log("Parsed User:", parsedUser);
 
       // Match with Redux state auths
+      // if (auths && auths.id !== parsedUser.id) {
+      //   console.log("User matches with Redux state");
+      //   dispatch(loginAuthData())
+      // } else {
+      //   console.log("User does not match with Redux state");
+      // }
+
       if (auths && auths.id === parsedUser.id) {
-        console.log("User matches with Redux state");
+        console.log(" User matches with Redux state");
+        dispatch(loginAuthData());
       } else {
-        console.log("User does not match with Redux state");
+        console.log(" User does not match with Redux state");
       }
 
       SetUserData(parsedUser);
     }
   }, [isLoggin, auths]);
+
+  // useEffect(() => {
+  //   console.log("User component mounted");
+  //   let user = localStorage.getItem("user");
+  //   if (user) {
+  //     let parsedUser = JSON.parse(user);
+  //     console.log(parsedUser);
+  //     SetUserData(parsedUser)
+  //   }
+  // }, []);
+
+
+
+  // filter data
+  // const filterProdcuts =products.filter((items)=>{
+  //   items.title.toLowerCase().include(SearchQuery.toLowerCase())
+  // })
 
 
   return (
@@ -62,9 +88,9 @@ export default function Header() {
                     type="text"
 
                     className="border-none rounded px-[25px] py-[10px] outline-none"
-                    placeholder="Search..."
+                    placeholder="Search..." value={SearchQuery}  
                   />
-                  <CiSearch className="absolute inline right-3 top-3" />
+                  <CiSearch  className="absolute inline right-3 top-3" />
                 </form>
 
               </div>
