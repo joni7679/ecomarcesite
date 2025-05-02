@@ -9,6 +9,9 @@ import Error404 from "../Pages/Error404.jsx";
 import UsersList from "../Pages/UsersList.jsx";
 import UserDasboard from "../Dasboard/UserDasboard/UserDasboard.jsx";
 import UserProfile from "../Dasboard/UserDasboard/UserProfile.jsx";
+import Admin from "../Dasboard/Admin/Admin.jsx";
+import DashboardHome from "../Dasboard/UserDasboard/DashboardHome.jsx";
+import Orders from "../Dasboard/UserDasboard/Orders.jsx";
 // import ProductBuyPage from "../Pages/ProductBuyPage.jsx";
 
 export let router = createBrowserRouter([
@@ -43,17 +46,26 @@ export let router = createBrowserRouter([
         element: <Login />
     },
     {
+        path: "/admin",
+        element: <Admin />
+    },
+    {
         path: "/userlist",
         element: <UsersList />
     },
 
     {
-        path: "/dasboard",
+        path: "/dashboard",
         element: <UserDasboard />,
-    },
-    {
-        path: "profile",
-        element: <UserProfile />
+        children: [
+            { index: true, element: <DashboardHome /> },
+            { path: "orders", element: <Orders /> },
+            { path: "cart", element: <h1>cart</h1> },
+            { path: "wishlist", element: <h1>wishlist</h1> },
+            { path: "profile", element: <UserProfile /> },
+            { path: "settings", element: <h1>settings</h1> },
+        
+        ]
     },
 
     {

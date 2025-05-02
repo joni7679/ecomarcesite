@@ -5,26 +5,28 @@ import axios from "axios";
 export const categoryApi = createAsyncThunk("category/fetch", async () => {
     try {
         let res = await axios.get(`https://dummyjson.com/products/categories`);
-        return res.data; 
+        return res.data;
     } catch (error) {
         throw new Error("Error fetching categories: " + error.message);
     }
 });
-
+// products
 const initialState = {
     categories: [], // Store all categories
-    selectedCategory: null,
-    filteredProducts: [],
-    allProducts: [], // Store all products initially
+    selectedCategory: 'All',
     status: 'idle',
-    error: null
+    error: null,
+
 };
 
-export const filterSlice = createSlice({
-    name: "filter",
+export const categoriesSlice = createSlice({
+    name: "categories",
     initialState,
     reducers: {
-        
+        selectedCategory: (state, action) => {
+            state.selectedCategory = action.payload;
+        }
+
     },
     extraReducers: (builder) => {
         builder
@@ -33,7 +35,7 @@ export const filterSlice = createSlice({
             })
             .addCase(categoryApi.fulfilled, (state, action) => {
                 state.status = 'succeeded';
-                state.categories = action.payload; 
+                state.categories = ['All', ...action.payload];
             })
             .addCase(categoryApi.rejected, (state, action) => {
                 state.status = 'failed';
@@ -43,5 +45,5 @@ export const filterSlice = createSlice({
 });
 
 // Export actions and reducer
-// export const { setProducts, filterByCategory } = filterSlice.actions;
-export default filterSlice.reducer;
+export const { selectedCategory } = categoriesSlice.actions;
+export default categoriesSlice.reducer;

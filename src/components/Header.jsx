@@ -8,17 +8,17 @@ import { useSelector, useDispatch } from "react-redux";
 import { authApiData, loginAuthData } from '../redux/slices/authSlice';
 import userlogo from '../../public/imges/user.png'
 import { productsApi } from '../redux/slices/productSlice';
-
+import { logOut } from '../redux/slices/authSlice';
+import { ToastContainer } from 'react-toastify/unstyled';
+import { toast } from 'react-toastify';
 // The `Categories` prop is expected to be an array
 export default function Header() {
   const [userData, SetUserData] = useState();
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const { auths, isLoggin } = useSelector((state) => state.auths);
+  const { auths, isLoggedIn, currentUser } = useSelector((state) => state.auths);
   const { products, isLoading, error, SearchQuery } = useSelector((state) => state.products);
-
-  console.log(isLoggin);
-
+  console.log(currentUser);
 
   useEffect(() => {
     dispatch(authApiData())
@@ -33,14 +33,13 @@ export default function Header() {
     if (storedUser) {
       let parsedUser = JSON.parse(storedUser);
       console.log("Parsed User:", parsedUser);
-
       // Match with Redux state auths
-      // if (auths && auths.id !== parsedUser.id) {
-      //   console.log("User matches with Redux state");
-      //   dispatch(loginAuthData())
-      // } else {
-      //   console.log("User does not match with Redux state");
-      // }
+      if (auths && auths.id !== parsedUser.id) {
+        console.log("User matches with Redux state");
+        dispatch(loginAuthData())
+      } else {
+        console.log("User does not match with Redux state");
+      }
 
       if (auths && auths.id === parsedUser.id) {
         console.log(" User matches with Redux state");
@@ -51,28 +50,26 @@ export default function Header() {
 
       SetUserData(parsedUser);
     }
-  }, [isLoggin, auths]);
+  }, [isLoggedIn, auths]);
 
-  // useEffect(() => {
-  //   console.log("User component mounted");
-  //   let user = localStorage.getItem("user");
-  //   if (user) {
-  //     let parsedUser = JSON.parse(user);
-  //     console.log(parsedUser);
-  //     SetUserData(parsedUser)
-  //   }
-  // }, []);
+  // logOutFunction
+  const logOutHandler = () => {
+    const confirm = window.confirm("Are you sure you want to log out?");
+    if (confirm) {
 
+      toast.success("Logged out successfully!");
+      setTimeout(() => {
+        dispatch(logOut());
 
-
-  // filter data
-  // const filterProdcuts =products.filter((items)=>{
-  //   items.title.toLowerCase().include(SearchQuery.toLowerCase())
-  // })
-
+      }, 200)
+    } else {
+      toast.info("Logout cancelled.");
+    }
+  };
 
   return (
     <>
+      <ToastContainer />
       <header className="px-5 py-3 bg-white shadow-lg ">
         <nav className="container mx-auto nav-bar">
           <div className="flex items-center justify-around nav-top-part">
@@ -88,9 +85,10 @@ export default function Header() {
                     type="text"
 
                     className="border-none rounded px-[25px] py-[10px] outline-none"
-                    placeholder="Search..." value={SearchQuery}  
+                    placeholder="Search..." value={SearchQuery}
+                    onChange={(e) => dispatch(productsApi({ query: e.target.value }))}
                   />
-                  <CiSearch  className="absolute inline right-3 top-3" />
+                  <CiSearch className="absolute inline right-3 top-3" />
                 </form>
 
               </div>
@@ -110,23 +108,23 @@ export default function Header() {
                 </span>
               </a>
 
-              {!isLoggin ? (
+              {!currentUser ? (
                 <>
-                  <Link to="/login" className="px-4 py-2 mr-2 text-white bg-green-500 roun-ded">Login</Link>
+                  <Link to="/login" className="px-4 py-2 mr-2 text-white bg-green-500 rounded">Login</Link>
                   <Link to="/signup" className="px-4 py-2 text-white bg-blue-500 rounded">Signup</Link>
                 </>
               ) : (
                 <div className="relative text-white group">
-                  <div className="bg-gray-600 rounded-full w-[55px] h-[55px]">
-                    <img src={userlogo} alt="" />
+                  <div className="bg-gray-600 rounded-full w-[55px] h-[55px] overflow-hidden cursor-pointer">
+                    <img src={userlogo} alt="user" className="w-full h-full object-cover" />
                   </div>
-                  <div className="absolute right-0 top-[40px]  w-48 mt-2 text-black bg-white rounded shadow-md ">
-                    <Link to="/profile" className="block px-4 py-2 hover:bg-gray-200">Perofile </Link>
-                    <Link to="/dasboard" className="block px-4 py-2 hover:bg-gray-200">Your Dashboard</Link>
-                    <button className="w-full px-4 py-2 text-left text-red-500 hover:bg-gray-200">Logout</button>
+
+                  <div className="absolute right-0 top-[60px] w-48 mt-[-20px] text-black bg-white rounded shadow-md hidden group-hover:block z-50">
+                    <Link to="/profile" className="block px-4 py-2 hover:bg-gray-200">Profile</Link>
+                    <Link to="/dashboard" className="block px-4 py-2 hover:bg-gray-200">Your Dashboard</Link>
+                    <button onClick={logOutHandler} className="w-full px-4 py-2 text-left text-red-500 hover:bg-gray-200">Logout</button>
                   </div>
                 </div>
-
               )}
 
               {/* <button>Light Them</button> */}
@@ -136,8 +134,6 @@ export default function Header() {
             <a href="#" className="flex items-center gap-1 capitalize">
               {/* <FiMapPin className="inline" /> Gangarampur */}
             </a>
-
-
           </div>
         </nav>
       </header>

@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 .sidebar::-webkit-scrollbar {
   display: none;
 }

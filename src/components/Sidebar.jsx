@@ -1,56 +1,46 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
-import { categoryApi } from '../redux/slices/filterSlice';
+import { categoryApi } from '../redux/slices/categoriesSlice';
+import { productsApi } from '../redux/slices/productSlice';
 
 export default function Sidebar() {
     let dispatch = useDispatch();
-    let category = useSelector((state) => state.filter);
-
-
-    console.log(category);
-
-
+    const { categories, selectedCategory, status, error } = useSelector((state) => state.categories)
+    console.log(categories);
+    const { products, isLoading, } = useSelector((state) => state.products);
 
     useEffect(() => {
         dispatch(categoryApi())
     }, [dispatch])
 
-    let colors = () => {
-
-        return `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.4)`;
-
+    // filter logic
+    const filterData = () =>{
+        
     }
+
+        let colors = () => {
+
+            return `rgba(${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},${Math.floor(Math.random() * 255)},0.4)`;
+
+        }
     console.log(colors());
-
-    // category 
-    let categorys=(id)=>{
-        alert(id)
-        console.log("selted.categories[id].name",category.categories[id].name);
-        dispatch(categoryApi(id))
-
-    }
 
     return (
         <>
-
             <div className="sidebar w-[30%] h-[33rem] shadow-lg bg-white p-5 rounded  border-r-2 border-gray-300   overflow-y-scroll scrollbar-hide">
                 <div className='categories'>
                     <p className='text-2xl font-semibold'>Categories</p>
                     <ul class="p-4">
-                        {category.categories.length > 0 ? (
-                            category.categories.map((categorie, i) => (
-                                <li onClick={()=>categorys(i)}  key={i} className="text-gray-600 cursor-pointer hover:text-gray-900">
+                        {categories.length > 0 ? (
+                            categories.map((categorie, i) => (
+                                <li key={i} className="text-gray-600 cursor-pointer hover:text-gray-900">
                                     {categorie.name}
                                 </li>
                             ))
                         ) : (
                             <p className="text-gray-500">Loading categories...</p>
                         )}
-
-
-
-
                     </ul>
                 </div>
                 <div class="w-full h-[2px] pr-2 pl-2 bg-gray-300"></div>

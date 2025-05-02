@@ -40,12 +40,31 @@ export const loginAuthData = createAsyncThunk(
     }
 );
 
+// edit data
+export const editData = createAsyncThunk("edit", async (id) => {
+    try {
+        let res = await axios.get(`http://localhost:3000/authes/${id}`);
+        let data = await res.data;
+        console.log(data);
+        return data;
+
+
+    } catch (error) {
+        return rejectWithValue(error.message);
+    }
+})
+
+const storedUser = JSON.parse(localStorage.getItem("user"));
+
+
 // Initial state
 const initialState = {
     auths: [],
     isLoading: false,
+    currentUser: storedUser || null,
+    isLoggedIn: storedUser ? true : false,
     error: null,
-    isLoggin:false,
+
 };
 
 // Define the slice
@@ -54,14 +73,36 @@ export const authSlice = createSlice({
     initialState,
     reducers: {
         addAuth: (state, action) => {
-            state.auths.push(action.payload);
+            return {
+                ...state,
+                auths: [...state.auths, action.payload]
+            }
         },
         delAuths: (state, action) => {
             state.auths = state.auths.filter(auth => auth.id !== action.payload);
         },
+        editAuth: (state, action) => {
+            return {
+                ...state,
+                auths: state.auths.map((user, index) => {
+                    if (user.id === action.payload.id) {
+                        return action.payload
+                    }
+                    return user
+                })
+            }
+        },
+        logOut: (state) => {
+            localStorage.removeItem("user");
+            state.currentUser = null;
+            state.auths = null,
+                state.isLoggedIn = false;
+        },
         fetchAuthsData: (state, action) => {
             state.auths = action.payload;
-        }
+        },
+
+
     },
     extraReducers: (builder) => {
         builder
@@ -75,7 +116,7 @@ export const authSlice = createSlice({
             })
             .addCase(authApiData.rejected, (state, action) => {
                 state.isLoading = false;
-                state.error = action.payload;
+                state.error = action.message;
             })
             .addCase(loginAuthData.pending, (state) => {
                 state.isLoading = true;
@@ -84,15 +125,16 @@ export const authSlice = createSlice({
             .addCase(loginAuthData.fulfilled, (state, action) => {
                 state.isLoading = false;
                 state.auths = action.payload;
-                state.isLoggin=true;
+                state.isLoggedIn = true;
+                localStorage.setItem("user", JSON.stringify(action.payload));
             })
             .addCase(loginAuthData.rejected, (state, action) => {
                 state.isLoading = false;
                 state.error = action.payload;
-                state.isLoggin=false;
+                state.isLoggedIn = false;
             });
     }
 });
 
-export const { addAuth, delAuths, fetchAuthsData } = authSlice.actions;
+export const { addAuth, delAuths, fetchAuthsData, editAuth, logOut } = authSlice.actions;
 export default authSlice;
