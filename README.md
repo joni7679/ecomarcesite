@@ -15,7 +15,7 @@ This is a full-fledged **E-Commerce Website** built with **React.js**, **Axios**
   - [Cart Functionality](#cart-functionality)
 - [Tech Stack](#tech-stack)
 - [API Integration](#api-integration)
-- [License](#license)
+
 
 ## Installation
 

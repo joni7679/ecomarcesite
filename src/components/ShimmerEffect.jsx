@@ -11,7 +11,6 @@ export default function ShimmerEffect() {
                     <div className="w-3/4 h-6 rounded dark:bg-gray-300"></div>
                 </div>
             </div>
-
         </>
     )
 }

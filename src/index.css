@@ -1,10 +1,8 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
 
 .sidebar::-webkit-scrollbar {
   display: none;
 }
+
 
 
 .filter-products::-webkit-scrollbar {

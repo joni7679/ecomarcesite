@@ -18,10 +18,10 @@ function Login() {
     let navigate = useNavigate();
     let { auths, isLoading, error } = useSelector((state) => state.auths);
     console.log(auths);
-    
+
     useEffect(() => {
         dispatch(authApiData);
-        
+
     }, [])
     const { values, errors, touched, handleBlur, handleSubmit, handleChange, handleReset } = useFormik({
         initialValues: initialValues,
@@ -31,10 +31,10 @@ function Login() {
 
             if (loginAuthData.fulfilled.match(res)) {
                 toast.success("Login successful!");
-
                 setTimeout(() => {
                     navigate(`/`);
                 }, 1000);
+                
             } else {
                 toast.error(res.payload || "Login failed. Please try again.");
             }

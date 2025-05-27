@@ -45,7 +45,7 @@ export const editData = createAsyncThunk("edit", async (id) => {
     try {
         let res = await axios.get(`http://localhost:3000/authes/${id}`);
         let data = await res.data;
-        console.log(data);
+        console.log("edit data is", data);
         return data;
 
 
@@ -132,7 +132,26 @@ export const authSlice = createSlice({
                 state.isLoading = false;
                 state.error = action.payload;
                 state.isLoggedIn = false;
-            });
+            })
+
+            .addCase(editData.pending, (state) => {
+                state.isLoading = true;
+                state.error = null;
+            })
+            .addCase(editData.fulfilled, (state, action) => {
+                state.isLoading = false;
+                state.error = null;
+                state.auths = action.payload;
+                state.isLoggedIn = true;
+                localStorage.setItem("user", JSON.stringify(action.payload));
+            })
+            .addCase(editData.rejected, (state, action) => {
+                state.isLoading = false;
+                state.error = action.message;
+                state.isLoggedIn = false;
+
+            })
+
     }
 });
 

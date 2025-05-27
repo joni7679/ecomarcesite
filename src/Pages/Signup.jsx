@@ -13,6 +13,7 @@ import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch } from 'react-redux';
 import { addAuth } from '../redux/slices/authSlice';
 import { toast, ToastContainer } from 'react-toastify';
+import { rollupVersion } from 'vite';
 
 const initialValues = {
   name: '',
@@ -38,12 +39,13 @@ export default function Signup() {
         email: values.email,
         number: values.number,
         password: values.password,
+        createdAt: new Date().toISOString(),
+        role: "user",
       };
 
       axios.post(`http://localhost:3000/authes`, authData).then((res) => {
         console.log(res.data);
         dispatch(addAuth());
-        toast.success("Sign up Successfully")
         setTimeout(() => {
           navigate(`/login`);
         }, 1000)

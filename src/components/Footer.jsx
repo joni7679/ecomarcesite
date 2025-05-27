@@ -8,14 +8,12 @@ export default function Footer() {
           <div className="flex flex-col space-y-4">
             <h2 className="font-medium text-gray-950">About</h2>
             <div className="flex flex-col space-y-2 text-sm dark:text-gray-600">
-
               <a className="capitalize cursor-pointer"
                 href="#">Contact As</a>
               <a className="capitalize cursor-pointer"
                 href="#">Support Center </a>
               <a className="capitalize cursor-pointer"
                 href="#">My Market store</a>
-
             </div>
           </div>
           <div className="flex flex-col space-y-4">

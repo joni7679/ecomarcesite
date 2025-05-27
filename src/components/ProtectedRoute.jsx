@@ -1,10 +1,9 @@
 import React from 'react'
 
-function ProtectedRoute({ children }) {
-
-    return (
-        <div>ProtectedRoute</div>
-    )
+function ProtectedRoute() {
+  return (
+    <div>ProtectedRoute</div>
+  )
 }
 
 export default ProtectedRoute

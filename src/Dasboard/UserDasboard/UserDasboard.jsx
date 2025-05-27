@@ -22,6 +22,7 @@ function UserDashboard() {
     const handleLogOut = () => {
         const confirmLogout = window.confirm("Are you sure you want to log out?");
         if (confirmLogout) {
+            toast.success("Log Out SuccessFully")
             dispatch(logOut());
             setTimeout(() => {
                 navigate(`/login`);
@@ -38,14 +39,14 @@ function UserDashboard() {
                 ) : (
                     <h2 className='text-white'>Loading...</h2>
                 )}
-                <button onClick={handleLogOut} className='p-5 text-white bg-blue-500 rounded cursor-pointer'>Log Out</button>
+                <button onClick={handleLogOut} className='p-5 text-white bg-[#282b30] rounded cursor-pointer'>Log Out</button>
             </nav>
             <div className='flex flex-col md:flex-row'>
-                <div className='w-full md:w-[30%]'>
+                <div className='w-full md:w-[30%]  bg-gray-900'>
                     <Sidebar />
                 </div>
-                <div className='w-full md:w-[70%] '>
-                    <div className='w-full h-full flex items-center justify-center'>
+                <div className='w-full md:w-[70%]  bg-gray-900'>
+                    <div className='flex items-center justify-center w-full h-full'>
                     <Outlet />
                     </div>
                 

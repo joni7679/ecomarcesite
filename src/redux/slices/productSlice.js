@@ -9,8 +9,7 @@ export let productsApi = createAsyncThunk('fetch/data', async () => {
         return response.data.products; // Returning the data directly
 
     } catch (error) {
-        throw Error('Error fetching products:', error.message); // Throw an error to be handled in the reducer
-    }
+        throw Error('Error fetching products:', error.message);     }
 });
 
 // Step 2: Initial state

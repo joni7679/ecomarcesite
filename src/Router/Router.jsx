@@ -12,6 +12,7 @@ import UserProfile from "../Dasboard/UserDasboard/UserProfile.jsx";
 import Admin from "../Dasboard/Admin/Admin.jsx";
 import DashboardHome from "../Dasboard/UserDasboard/DashboardHome.jsx";
 import Orders from "../Dasboard/UserDasboard/Orders.jsx";
+import Settings from "../Dasboard/UserDasboard/Settings.jsx";
 // import ProductBuyPage from "../Pages/ProductBuyPage.jsx";
 
 export let router = createBrowserRouter([
@@ -63,8 +64,7 @@ export let router = createBrowserRouter([
             { path: "cart", element: <h1>cart</h1> },
             { path: "wishlist", element: <h1>wishlist</h1> },
             { path: "profile", element: <UserProfile /> },
-            { path: "settings", element: <h1>settings</h1> },
-        
+            { path: "settings", element: <Settings /> },
         ]
     },
 
